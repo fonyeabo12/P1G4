@@ -12,14 +12,18 @@
         console.log(response);
     };
 
+    
+
     $.ajax({
         url: queryURL1,
         method: 'GET',
     }).then(ajaxCB);
 
-    // const queryURL2 = "https://energ.ee/covid19-us-api/states.json";
+    const queryURL2 = "https://energ.ee/covid19-us-api/states.json";
 
-    // $.ajax({
-    //     url: "https://energ.ee/covid19-us-api/states.json",
-    //     method: 'GET',
-    // }).then(response)
+    $.ajax({
+        url: queryURL2,
+        method: 'GET',
+    }).then(function(response){
+        console.log(response);
+    });
