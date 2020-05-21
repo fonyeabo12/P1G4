@@ -3,12 +3,12 @@
 
     function ajaxCB(response) {
          
-        var newList = $("<ul>");
+        var newList = $("<h3>");
         
-        var cases = $("<li>").text(response[response.length -1].Cases);
+        var cases = $("<p>").text(response[response.length -1].Cases);
         
         newList.append(cases);
-        $("div").append(newList);
+        $("#totalCases").append(newList);
         console.log(response);
     };
 
@@ -20,10 +20,16 @@
     }).then(ajaxCB);
 
     const queryURL2 = "https://energ.ee/covid19-us-api/states.json";
+    
+    // function getState(response) {
+    //     var stateDiv = $("<div>");
 
+    //     var stateName = $("<p>").text(response[]);
+    // }
+    
     $.ajax({
         url: queryURL2,
         method: 'GET',
-    }).then(function(response){
+    }).then(function(response) {
         console.log(response);
     });
