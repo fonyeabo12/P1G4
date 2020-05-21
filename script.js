@@ -28,15 +28,24 @@
             method: 'GET',
         })
         .then(data => {
+            console.log(data);
             return data;
         });
     }
 
     const stateData = getStateData();
     
-    $(this).on("click", function(event) {
-        event.preventDefault();
-        let state = $("<div>").text(response[0])
+    $(this).on("click", "#buttonId", function(stateData) {
+        stateData.preventDefault();
+        let state = $("<div>").text(stateData.object);
+        let currentDate = $("<div>").text(stateData[response.length -1].date);
+        let cases = $("<div>").text(stateData[response.length -1].confirmed);
+        let death = $("<div>").text(stateData[response.length -1].deaths);
+        
+        $("#stateName").append(state);
+        $("#date").append(currentDate);
+        $("#stateCases").append(cases);
+        $("#stateDeaths").append(death);
     });
 
-    console.log(getStateData);
+    
