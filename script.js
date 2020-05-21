@@ -20,16 +20,23 @@
     }).then(ajaxCB);
 
     const queryURL2 = "https://energ.ee/covid19-us-api/states.json";
-    
-    // function getState(response) {
-    //     var stateDiv = $("<div>");
 
-    //     var stateName = $("<p>").text(response[]);
-    // }
+    function getStateData() {
+        
+        $.ajax({
+            url: queryURL2,
+            method: 'GET',
+        })
+        .then(data => {
+            return data;
+        });
+    }
+
+    const stateData = getStateData();
     
-    $.ajax({
-        url: queryURL2,
-        method: 'GET',
-    }).then(function(response) {
-        console.log(response);
+    $(this).on("click", function(event) {
+        event.preventDefault();
+        let state = $("<div>").text(response[0])
     });
+
+    console.log(getStateData);
