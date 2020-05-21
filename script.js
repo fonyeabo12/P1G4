@@ -35,12 +35,13 @@
 
     const stateData = getStateData();
     
-    $(this).on("click", "#buttonId", function(stateData) {
-        stateData.preventDefault();
-        let state = $("<div>").text(stateData.object);
-        let currentDate = $("<div>").text(stateData[response.length -1].date);
-        let cases = $("<div>").text(stateData[response.length -1].confirmed);
-        let death = $("<div>").text(stateData[response.length -1].deaths);
+    $("#search").on("click", function(getStateData, response) {
+        getStateData.preventDefault();
+        //var state = $("#input").val();
+        let state = $("<div>").text(response.object);
+        let currentDate = $("<div>").text(response[response.length -1].date);
+        let cases = $("<div>").text(response[response.length -1].confirmed);
+        let death = $("<div>").text(response[response.length -1].deaths);
         
         $("#stateName").append(state);
         $("#date").append(currentDate);
