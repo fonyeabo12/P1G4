@@ -1,5 +1,4 @@
-const queryURL1 =
-	"https://api.covid19api.com/total/country/united-states/status/confirmed";
+const queryURL1 = "https://api.covid19api.com/total/country/united-states/status/confirmed";
 
 function ajaxCB(response) {
 	var newList = $("<h3>");
@@ -18,27 +17,28 @@ $.ajax({
 
 const queryURL2 = "https://energ.ee/covid19-us-api/states.json";
 
-function getStateData() {
+$("#search").on("click", function (event) {
+	event.preventDefault();
 	$.ajax({
 		url: queryURL2,
 		method: "GET",
 	}).then((data) => {
-		console.log(data);
-		return data;
-	});
-}
+		console.log(data[$("#input").val()]);
+	
+	const state = $("#input").val();
+	const stateData = data[state];
+	const currentDate = stateData[state][state.length - 1].date;
+	const cases = stateData[state][state.length -1].confirmed;
+	const death = stateData[state][state.length -1].deaths;
 
-const stateData = getStateData();
 
-$("#submit").on("click", function (stateData) {
-	stateData.preventDefault();
-	let state = $("<div>").text(stateData.object);
-	let currentDate = $("<div>").text(stateData[response.length - 1].date);
-	let cases = $("<div>").text(stateData[response.length - 1].confirmed);
-	let death = $("<div>").text(stateData[response.length - 1].deaths);
+	// let currentDate = $("<div>").text(stateData[response.length - 1].date);
+	// let cases = $("<div>").text(stateData[response.length - 1].confirmed);
+	// let death = $("<div>").text(stateData[response.length - 1].deaths);
 
 	$("#stateName").append(state);
 	$("#date").append(currentDate);
 	$("#stateCases").append(cases);
 	$("#stateDeaths").append(death);
+});
 });
