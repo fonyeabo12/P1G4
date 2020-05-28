@@ -1,4 +1,7 @@
-const queryURL1 = "https://api.covid19api.com/total/country/united-states/status/confirmed";
+/** @format */
+
+const queryURL1 =
+	"https://api.covid19api.com/total/country/united-states/status/confirmed";
 
 function ajaxCB(response) {
 	var newList = $("<h3>");
@@ -24,16 +27,23 @@ $("#search").on("click", function (event) {
 		method: "GET",
 	}).then((data) => {
 		console.log(data[$("#input").val()]);
-	
-	const state = $("#input").val();
-	const stateData = data[state];
-	const currentDate = stateData[stateData.length - 1].date;
-	const cases = stateData[stateData.length -1].confirmed;
-	const death = stateData[stateData.length -1].deaths;
 
-	$("#stateName").append(state);
-	$("#date").append(currentDate);
-	$("#stateCases").append(cases);
-	$("#stateDeaths").append(death);
-});
+		const state = $("#input").val();
+		const stateData = data[state];
+		const currentDate = stateData[stateData.length - 1].date;
+		const cases = stateData[stateData.length - 1].confirmed;
+		const death = stateData[stateData.length - 1].deaths;
+
+		$("#stateName").empty();
+		$("#date").empty();
+		$("#stateCases").empty();
+		$("#stateDeaths").empty();
+
+		$("#input").val("");
+
+		$("#stateName").append(state);
+		$("#date").append(currentDate);
+		$("#stateCases").append(cases);
+		$("#stateDeaths").append(death);
+	});
 });
