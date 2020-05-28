@@ -27,14 +27,9 @@ $("#search").on("click", function (event) {
 	
 	const state = $("#input").val();
 	const stateData = data[state];
-	const currentDate = stateData[state][state.length - 1].date;
-	const cases = stateData[state][state.length -1].confirmed;
-	const death = stateData[state][state.length -1].deaths;
-
-
-	// let currentDate = $("<div>").text(stateData[response.length - 1].date);
-	// let cases = $("<div>").text(stateData[response.length - 1].confirmed);
-	// let death = $("<div>").text(stateData[response.length - 1].deaths);
+	const currentDate = stateData[stateData.length - 1].date;
+	const cases = stateData[stateData.length -1].confirmed;
+	const death = stateData[stateData.length -1].deaths;
 
 	$("#stateName").append(state);
 	$("#date").append(currentDate);
