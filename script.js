@@ -4,12 +4,10 @@ const queryURL1 =
 	"https://api.covid19api.com/total/country/united-states/status/confirmed";
 
 function ajaxCB(response) {
-	var newList = $("<h3>");
+	
+	var cases = $("<p>").css({"text-align": "center", "color": "red"}).text(response[response.length - 1].Cases);
 
-	var cases = $("<p>").text(response[response.length - 1].Cases);
-
-	newList.append(cases);
-	$("#totalCases").append(newList);
+	$("#totalCases").append(cases);
 	console.log(response);
 }
 
