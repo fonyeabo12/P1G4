@@ -1,35 +1,44 @@
-    const queryURL1 = "https://api.covid19api.com/total/country/united-states/status/confirmed";
-    
+const queryURL1 =
+	"https://api.covid19api.com/total/country/united-states/status/confirmed";
 
-    function ajaxCB(response) {
-         
-        var newList = $("<h3>");
-        
-        var cases = $("<p>").text(response[response.length -1].Cases);
-        
-        newList.append(cases);
-        $("#totalCases").append(newList);
-        console.log(response);
-    };
+function ajaxCB(response) {
+	var newList = $("<h3>");
 
-    
+	var cases = $("<p>").text(response[response.length - 1].Cases);
 
-    $.ajax({
-        url: queryURL1,
-        method: 'GET',
-    }).then(ajaxCB);
+	newList.append(cases);
+	$("#totalCases").append(newList);
+	console.log(response);
+}
 
-    const queryURL2 = "https://energ.ee/covid19-us-api/states.json";
-    
-    // function getState(response) {
-    //     var stateDiv = $("<div>");
+$.ajax({
+	url: queryURL1,
+	method: "GET",
+}).then(ajaxCB);
 
-    //     var stateName = $("<p>").text(response[]);
-    // }
-    
-    $.ajax({
-        url: queryURL2,
-        method: 'GET',
-    }).then(function(response) {
-        console.log(response);
-    });
+const queryURL2 = "https://energ.ee/covid19-us-api/states.json";
+
+function getStateData() {
+	$.ajax({
+		url: queryURL2,
+		method: "GET",
+	}).then((data) => {
+		console.log(data);
+		return data;
+	});
+}
+
+const stateData = getStateData();
+
+$("#submit").on("click", function (stateData) {
+	stateData.preventDefault();
+	let state = $("<div>").text(stateData.object);
+	let currentDate = $("<div>").text(stateData[response.length - 1].date);
+	let cases = $("<div>").text(stateData[response.length - 1].confirmed);
+	let death = $("<div>").text(stateData[response.length - 1].deaths);
+
+	$("#stateName").append(state);
+	$("#date").append(currentDate);
+	$("#stateCases").append(cases);
+	$("#stateDeaths").append(death);
+});

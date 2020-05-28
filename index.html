@@ -71,12 +71,22 @@
     <header class="info">
         <div class="col-md-12" id="header">Covid 19 United States Tracker By State</div>
     </header>
-    <div class="container">
-        <h2 id="totalCases">Total cases in U.S. :</h2>
-    </div>
-    <aside class="info">
+    <div class="container-fluid">
+        <div class="col-lg-9">
+            <div class="card">
+                <div class="card-section">
+                    <h2 id="totalCases">Total cases in U.S. :</h2>
+                    <div id="stateName"></div>
+                    <div id="date"></div>
+                    <div id="stateCases"></div>
+                    <div id="stateDeaths"></div>
+                </div>
+            </div>  
+        </div>
+        <aside class="info">
         <div class="col-md-3 form-group" id="asideSearch">
             <h1>Search:</h1>
+<<<<<<< HEAD
             <!-- <div id="city" class="input-group md-form form-sm form-1 pl-0"> -->
                 <div class=menu>
                 <ul class="menu dropdown" data-dropdown-menu>
@@ -149,6 +159,15 @@
 
  <div id="chart_div"></div>
 
+=======
+            <div id="state" class="input-group md-form form-sm form-1 pl-0">
+                <input id="input" class="form-control my-0 py-1" type="text" placeholder="State name" aria-label="Search">
+                <div class="input-group-prepend">
+                    <button class="submit" id="search"><i class="fa fa-search" aria-hidden="true"></i></button></div>
+            </div>
+        </div>
+    </div>
+>>>>>>> master
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
