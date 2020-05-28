@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css"/>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <!-- to use conventional graphs
+  <script>
+    google.charts.load('current', {packages: ['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      // Define the chart to be drawn.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Element');
+      data.addColumn('number', 'Percentage');
+      data.addRows([
+        ['Nitrogen', 0.78],
+        ['Oxygen', 0.21],
+        ['Other', 0.01]
+      ]);
+
+      // Instantiate and draw the chart.
+      var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
+      chart.draw(data, null);
+    }
+  </script>---->
+
+<!-- to use google maps
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+    google.charts.load('current', { 'packages': ['map'], mapsApiKey: AIzaSyCUKF0dSYlXy-7MtbJnXXY3B_m-Dk3iPkU});
+    google.charts.setOnLoadCallback(drawMap);
+
+
+    
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Country', 'Population'],
+        ['China', 'China: 1,363,800,000'],
+        ['India', 'India: 1,242,620,000'],
+        ['US', 'US: 317,842,000'],
+        ['Indonesia', 'Indonesia: 247,424,598'],
+        ['Brazil', 'Brazil: 201,032,714'],
+        ['Pakistan', 'Pakistan: 186,134,000'],
+        ['Nigeria', 'Nigeria: 173,615,000'],
+        ['Bangladesh', 'Bangladesh: 152,518,015'],
+        ['Russia', 'Russia: 146,019,512'],
+        ['Japan', 'Japan: 127,120,000']
+      ]);
+
+    var options = {
+      showTooltip: true,
+      showInfoWindow: true
+    };
+
+    var map = new google.visualization.Map(document.getElementById('chart_div'));
+
+    map.draw(data, options);
+  };
+  <!-- </script>---- -->
+
+<link rel="stylesheet" href="style.css"/>
     <title>Covid 19 United States Tracker</title>
 </head>
 <body>
@@ -28,6 +86,80 @@
         <aside class="info">
         <div class="col-md-3 form-group" id="asideSearch">
             <h1>Search:</h1>
+<<<<<<< HEAD
+            <!-- <div id="city" class="input-group md-form form-sm form-1 pl-0"> -->
+                <div class=menu>
+                <ul class="menu dropdown" data-dropdown-menu>
+                    <li>
+                    <a href="#">States</a>
+                    <ul class="menu">
+                        <li><a href="#">Alabama</a></li>
+                        <li><a href="#">Alaska</a></li>
+                        <li><a href="#">Arizona</a></li>
+                        <li><a href="#">Arkansas</a></li>
+                        <li><a href="#">California</a></li>
+                        <li><a href="#">Colorado</a></li>
+                        <li><a href="#">Connecticut</a></li>
+                        <li><a href="#">Delaware</a></li>
+                        <li><a href="#">Florida</a></li>
+                        <li><a href="#">Georgia</a></li>
+                        <li><a href="#">Hawaii</a></li>
+                        <li><a href="#">Idaho</a></li>
+                        <li><a href="#">Alabama</a></li>
+                        <li><a href="#">Illinois</a></li>
+                        <li><a href="#">Indiana</a></li>
+                        <li><a href="#">Iowa</a></li>
+                        <li><a href="#">Kansas</a></li>
+                        <li><a href="#">Kentucky</a></li>
+                        <li><a href="#">Louisiana</a></li>
+                        <li><a href="#">Maine</a></li>
+                        <li><a href="#">Maryland</a></li>
+                        <li><a href="#">Massachusetts</a></li>
+                        <li><a href="#">Michigan</a></li>
+                        <li><a href="#">Minnesota</a></li>
+                        <li><a href="#">Mississippi</a></li>
+                        <li><a href="#">Missouri</a></li>
+                        <li><a href="#">Montana</a></li>
+                        <li><a href="#">Nebraska</a></li>
+                        <li><a href="#">Nevada</a></li>
+                        <li><a href="#">New Hampshire</a></li>
+                        <li><a href="#">New Jersey</a></li>
+                        <li><a href="#">New Mexico</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">North Carolina</a></li>
+                        <li><a href="#">North Dakota</a></li>
+                        <li><a href="#">Ohio</a></li>
+                        <li><a href="#">Oklahoma</a></li>
+                        <li><a href="#">Oregon</a></li>
+                        <li><a href="#">Pennsylvania</a></li>
+                        <li><a href="#">Rhode Island</a></li>
+                        <li><a href="#">South Carolina</a></li>
+                        <li><a href="#">South Dakota</a></li>
+                        <li><a href="#">Tennessee</a></li>
+                        <li><a href="#">Texas</a></li>
+                        <li><a href="#">Utah</a></li>
+                        <li><a href="#">Vermont</a></li>
+                        <li><a href="#">Virginia</a></li>
+                        <li><a href="#">Washington</a></li>
+                        <li><a href="#">West Virginia</a></li>
+                        <li><a href="#">Wisconsin</a></li>
+                        <li><a href="#">Wyoming</a></li>
+                    </li>
+                </ul>
+                </div>
+
+                   
+                <!-- <input id="input" class="form-control my-0 py-1" type="text" placeholder="State name" aria-label="Search">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="text"><i class="fas fa-search" aria-hidden="true"></i></span></div> -->
+            <!-- </div> -->
+
+ <!-- Identify where the chart should be drawn. -->
+  <div id="mybarChart"/>
+
+ <div id="chart_div"></div>
+
+=======
             <div id="state" class="input-group md-form form-sm form-1 pl-0">
                 <input id="input" class="form-control my-0 py-1" type="text" placeholder="State name" aria-label="Search">
                 <div class="input-group-prepend">
@@ -35,9 +167,16 @@
             </div>
         </div>
     </div>
+>>>>>>> master
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 <script src="script.js"></script>
 </body>
 </html>
