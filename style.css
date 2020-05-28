@@ -48,10 +48,6 @@ body {
 	line-height: 1;
 }
 
-#text {
-	background-color: yellowgreen;
-}
-
 .fas {
 	color: white;
 }
@@ -75,55 +71,11 @@ a {
 	line-height: 35px;
 }
 
-ul {
-	color: grey;
-	font-size: 18px;
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 24px;
-	padding-left: 20px;
-}
-
-#fiveDay {
-	text-align: left;
-	font-weight: bold;
-	padding-top: 30px;
-	padding-bottom: 15px;
-	font-size: 30px;
-	color: black;
-}
-
-#dailyforcast {
-	width: 100%;
-	padding: 0;
-	margin: 5px 0px 0px 15px;
-}
-
-.card-deck {
-	margin: 0 auto;
-	float: none;
-	margin-bottom: 10px;
-	align-content: center;
-}
-
-.fiveDayCard {
-	border: none;
-}
-
-.card-header {
-	font-size: 20px;
-	font-weight: bolder;
-	color: black;
-	text-align: center;
-	padding-bottom: 0px;
-	border: none;
-}
-
 .card-body {
 	text-align: center;
 	padding-bottom: 15px;
 	font-size: 12px;
 	line-height: 20px;
 	color: black;
-	background-color: yellow;
 	border: none;
 }
