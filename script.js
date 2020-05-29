@@ -8,7 +8,6 @@ function ajaxCB(response) {
 	var cases = $("<p>").css({"text-align": "center", "color": "red"}).text(response[response.length - 1].Cases);
 
 	$("#totalCases").append(cases);
-	console.log(response);
 }
 
 $.ajax({
@@ -24,7 +23,6 @@ $("#search").on("click", function (event) {
 		url: queryURL2,
 		method: "GET",
 	}).then((data) => {
-		console.log(data[$("#input").val()]);
 
 		const state = $("#input").val();
 		const stateData = data[state];
