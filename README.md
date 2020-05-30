@@ -36,6 +36,14 @@ b. [Portfolio](http://fonyeabo12.github.io/)
 c. [GitHub](http://github.com/fonyeabo12)
 
 ## Technologies
+<<<<<<< HEAD
+=======
+* HTML
+* CSS
+* Foundation
+* Covid 19 API
+* https://covidtracking.com/api/states
+>>>>>>> a712c65794ed0f6264d44b98454cf8c5d85e150f
 
 - HTML
 - CSS
