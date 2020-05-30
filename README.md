@@ -37,7 +37,6 @@ c. [GitHub address](http://github.com/fonyeabo12)
 * CSS
 * Foundation
 * Covid 19 API
-* Google charts 3rd Party API
 * https://covidtracking.com/api/states
 
 
