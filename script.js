@@ -37,9 +37,9 @@ $("#search").on("click", function (event) {
 
 		$("#input").val("");
 
-		$("#stateName").append(state);
-		$("#date").append(currentDate);
-		$("#stateCases").append(cases);
-		$("#stateDeaths").append(death);
+		$("#stateName").append("State: " + state);
+		$("#date").append("Current Date: " + currentDate);
+		$("#stateCases").append("Total Cases: " + cases);
+		$("#stateDeaths").append("Total Deaths: " + death);
 	});
 });
