@@ -36,22 +36,20 @@ b. [Portfolio](http://fonyeabo12.github.io/)
 c. [GitHub](http://github.com/fonyeabo12)
 
 ## Technologies
-<<<<<<< HEAD
-=======
-* HTML
-* CSS
-* Foundation
-* Covid 19 API
-* https://covidtracking.com/api/states
->>>>>>> a712c65794ed0f6264d44b98454cf8c5d85e150f
 
 - HTML
 - CSS
-- Javascript & jQuery
 - ZURB's Foundation Documentations
-- World COVID19 API
-- Google Charts 3rd Party API
+- Covid 19 API
 - https://covidtracking.com/api/states
+
+* HTML
+* CSS
+* Javascript & jQuery
+* ZURB's Foundation Documentations
+* World COVID19 API
+* Google Charts 3rd Party API
+* https://covidtracking.com/api/states
 
 ## Installation
 
@@ -71,7 +69,7 @@ The api used for total USA data is from [Postman: COVID19 API](https://api.covid
 The api used for individual state data is from a fellow developer Ted Slesinkski:
 [Github Profile](https://github.com/energee)
 
-We would also like to credit the help of the many users of Stack OverFlow
+We would also like to credit the help of the Stack OverFlow community
 
 ## Tests
 
