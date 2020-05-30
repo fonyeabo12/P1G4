@@ -25,11 +25,11 @@ Project 1
 
      3. Chidi Onyeabo
 
-a. LinkedIn:   [LinkedIn Profile](http://linkedin.com/in/franklin-onyeabo-b168631a1)
+a. [LinkedIn Profile](http://linkedin.com/in/franklin-onyeabo-b168631a1)
 
-b. Portfolio:  [Github Portfolio](http://fonyeabo12.github.io/)
+b. [Github Portfolio](http://fonyeabo12.github.io/)
 
-c. Github:     [GitHub address](http://github.com/fonyeabo12)
+c. [GitHub address](http://github.com/fonyeabo12)
           
  
 ## Technologies
