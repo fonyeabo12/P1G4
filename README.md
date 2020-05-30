@@ -1,69 +1,70 @@
+<!-- @format -->
+
 # P1G4
 
 # Project Description
-This poject outlines the statistics for the Covid19 virus in The United States of America. It shows the numbers for cases, deaths, recoveries on an hourly basis and daily basis.
-This information will support and assist local counties, hospitals and medical practitioners with planning, supporting and tackling this pandemic.
 
+This project outlines statistics of the Coronavirus (COVID-19) within The United States of America. This project obtains the numbers for cases and deaths on a current hourly basis for each new day.
+This information will support and assist local counties, hospitals and medical authorities with handling this pandemic.
 
 Project 1
+
 ## Developers
+
      1. Evan Zeek
 
           a. LinkedIn:
 
-          b. Portfolio:  
+          b. Portfolio:
 
-          c. Github:     
+          c. Github:
 
      2. Joey Piraino
 
-   a. [LinkedIn Profile](http://www.linkedin.com/in/joey-piraino)
+a. [LinkedIn](http://www.linkedin.com/in/joey-piraino)
 
-   b. [Github Portfolio](https://joeypiraino.github.io/portfolio)
+b. [Portfolio](https://joeypiraino.github.io/portfolio)
 
-   c. [GitHub address](https://github.com/joeypiraino)
+c. [GitHub](https://github.com/joeypiraino)
 
      3. Chidi Onyeabo
 
-a. [LinkedIn Profile](http://linkedin.com/in/franklin-onyeabo-b168631a1)
+a. [LinkedIn](http://linkedin.com/in/franklin-onyeabo-b168631a1)
 
-b. [Github Portfolio](http://fonyeabo12.github.io/)
+b. [Portfolio](http://fonyeabo12.github.io/)
 
-c. [GitHub address](http://github.com/fonyeabo12)
-          
- 
+c. [GitHub](http://github.com/fonyeabo12)
+
 ## Technologies
-* HTML
-* CSS
-* Foundation
-* Covid 19 API
-* Google charts 3rd Party API
-* https://covidtracking.com/api/states
 
+- HTML
+- CSS
+- Javascript & jQuery
+- ZURB's Foundation Documentations
+- World COVID19 API
+- Google Charts 3rd Party API
+- https://covidtracking.com/api/states
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To create this site, we first had to create a working search bar and an accompanying search button.
+Then we had to create an onclick function in our Javascript that would call information from our api(s)
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+The website updates in real time with the total number of U.S. COVID-19 cases directly on the UI of the html.
+To find out the information of different states in the U.S., simply type the name of the state within the search box, making sure to start the state name with a capital letter (ex: CORRECT = "Texas"; INCORRECT = "texas").
+After doing so, the data about the searched state should render onto the html just under the present data.
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+The api used for total USA data is from [Postman: COVID19 API](https://api.covid19api.com/)
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+The api used for individual state data is from a fellow developer Ted Slesinkski:
+[Github Profile](https://github.com/energee)
 
-If you followed tutorials, include links to those here as well.
-
-
-
-
-
+We would also like to credit the help of the many users of Stack OverFlow
 
 ## Tests
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them.
-
-
