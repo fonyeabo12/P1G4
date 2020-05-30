@@ -111,3 +111,25 @@ a {
 	font-size: large;
 	color: navy;
 }
+
+.flag {
+
+background-repeat: no-repeat;
+
+display: inline-block;
+
+height: 0px;
+
+overflow: hidden;
+
+padding-top: 25px;
+
+width: 25px;
+
+}
+
+.us {
+
+background-image: url('../images/usflag.png');
+
+}
