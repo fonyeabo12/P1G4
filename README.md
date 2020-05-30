@@ -17,11 +17,11 @@ Project 1
 
      2. Joey Piraino
 
-          a. [LinkedIn Profile](http://www.linkedin.com/in/joey-piraino)
+   a. [LinkedIn Profile](http://www.linkedin.com/in/joey-piraino)
 
-          b. [Github Portfolio](https://joeypiraino.github.io/portfolio)
+   b. [Github Portfolio](https://joeypiraino.github.io/portfolio)
 
-          c. [GitHub address](https://github.com/joeypiraino)
+   c. [GitHub address](https://github.com/joeypiraino)
 
      3. Chidi Onyeabo
 
