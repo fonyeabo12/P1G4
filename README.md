@@ -2,6 +2,9 @@
 
 # P1G4
 
+#Deployed Link
+LIVE: https://fonyeabo12.github.io/P1G4-Covid19-Statistics-US/
+
 # Project Description
 
 This project outlines statistics of the Coronavirus (COVID-19) within The United States of America. This project obtains the numbers for cases and deaths on a current hourly basis for each new day.
